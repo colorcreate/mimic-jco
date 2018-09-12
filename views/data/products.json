@@ -1,0 +1,19 @@
+[{
+    "name": "Donuts",
+    "url": "/assets/products/donut.jpg"
+}, {
+    "name": "J.COFFEE",
+    "url": "/assets/products/jcoffee.jpg"
+}, {
+    "name": "J.Club",
+    "url": "/assets/products/clubs.jpg"
+}, {
+    "name": "J.Pops",
+    "url": "/assets/products/pops.jpg"
+}, {
+    "name": "J.COLL Yogurt",
+    "url": "/assets/products/jcool.jpg"
+}, {
+    "name": "J.CRONUT",
+    "url": "/assets/products/cronut.jpg"
+}]

@@ -1,0 +1,80 @@
+body{
+    font-size: 10pt;
+}
+nav{
+    .countryname{
+        font-size: 120%;
+        font-weight: 700;
+        text-align: center;
+        color: #f26724;
+        margin-top: -10px;
+        border-bottom: #6b230a 1px solid;
+    }
+    .nav-list{
+        >li{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            >a{
+                padding: 7px 10px;
+                color: #6b230a;
+                width: 100%;
+            }
+            svg{
+                fill: currentColor;
+            }
+            &:hover{
+                background: #f16421;
+                border-radius: 5px;
+                >a{
+                    text-decoration: none;
+                    color: white;
+                }
+                svg{
+                    fill: white;
+                }
+                .dropdown-menu{
+                    top: 0;
+                    left: 140px;
+                    display: block;
+                    border-radius: 8px;
+                    width: 250px;
+                }
+            }
+        }
+        #product-list{
+            li{
+                a{
+                    padding-bottom: 5px;
+                    .brand-img{
+                        padding: 0 5px;
+                        img{
+                            width: 30px;
+                        }
+                    }
+                    .brand-text{
+                        color: #6b230a;
+                        padding: 3px 15px;
+                        width: 100%;
+                    }
+                }
+                &:hover{
+                    a{
+                        text-decoration: none;
+                        .brand-text{
+                            color: white;
+                            background: #f16421;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.item{
+    height: 10rem;
+    background: #4DC7A0;
+    padding: 1rem;
+}
