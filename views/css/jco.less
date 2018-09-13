@@ -1,3 +1,7 @@
+@font-face {
+    font-family: goodgirls;
+    src: url(../assets/goodgirls.ttf);
+}
 body{
     font-size: 10pt;
 }
@@ -73,8 +77,178 @@ nav{
         }
     }
 }
-.item{
-    height: 10rem;
-    background: #4DC7A0;
-    padding: 1rem;
+.swipper-container{
+    height: 100px;
+}
+.custom-scroll{
+    height: 480px;
+    overflow: auto;
+    .swiper-pagination-switch {
+        width: 96px;
+        height: 72px;
+        display: block;
+        margin: 5px auto;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+    }
+    &::-webkit-scrollbar {
+        width: 15px;
+    }
+    &::-webkit-scrollbar-button:vertical:increment { 
+        background: url(../assets/arr_down.gif) no-repeat;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &::-webkit-scrollbar-button:vertical:decrement {
+        background: url(../assets/arr_top.gif) no-repeat;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+     
+    &::-webkit-scrollbar-thumb {
+        background: #f16421; 
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: #E25B1B; 
+    }
+    &::-webkit-scrollbar-thumb:active {
+        background: #CC5218; 
+    }
+}
+.swipper-container{
+    .swiper-slide{
+        .boxtext{
+            color: #6b230a;
+            text-align: center;
+            .product-name{
+                font-size: 24px;
+                font-family: goodgirls;
+            }
+        }
+    }
+}
+.header{
+    #select-country {
+        button{
+            background-color: transparent;
+            border: 1px solid #ccc;
+            color: #f16421;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            img{
+                border: 1px solid #ccc;
+                margin-right: 10px;
+            }
+            &:hover{
+                background-color: #f16421;
+                color: white;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        ul.country-menu {
+            display: none;
+            list-style: none;
+            margin: 0px;
+            margin-top: 3px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 7px 0px #ccc;
+            z-index: 1;
+            background-color: white;
+            right: 0;
+            li{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                a{
+                    padding: 5px 10px;
+                    line-height: 20px;
+                    width: 100%;
+                    border-radius: 10px;
+                    color: black;
+                    img{
+                        border: 1px solid #ccc;
+                        margin-right: 5px;
+                    }
+                    &:hover{
+                        background-color: #f16421;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+        &.active{
+            button{
+                background-color: #f16421;
+                color: white;
+            }
+            ul.country-menu{
+                display: block;
+            }
+        }
+    }
+}
+.footer{
+    text-align: center;
+    font-size: 12px;
+    color: #6b230a;
+    text-align: center;
+    ul.social-bookmarks{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        .jcodelivery a{
+            background: url(../assets/social/jcodelivery.png) no-repeat 0 0;
+            width: 115px !important;
+            &:hover{
+                background-color: #66150b;
+            }
+        }
+        .facebook a{
+            background: url(../assets/social/facebook.png) no-repeat 0 0;
+            &:hover{
+                background-color: #3b5998;
+            }
+        }
+        .instagram a{
+            background: url(../assets/social/instagram-new.png) no-repeat 0 0;
+            &:hover{
+                background-color: #eb4924;
+            }
+        }
+        .twitter a{
+            background: url(../assets/social/twitter.png) no-repeat 0 0;
+            &:hover{
+                background-color: #48c4d2;
+            }
+        }
+        .youtube a{
+            background: url(../assets/social/youtube.png) no-repeat 0 0;
+            &:hover{
+                background-color: #f45750;
+            }
+        }
+        a{
+            color: transparent;
+            width: 40px;
+            height: 40px;
+            display: block;
+            transition: all .3s ease 0s;
+            &:hover{
+                background-position: 0 -40px;
+            }
+        }
+    }
 }

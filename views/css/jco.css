@@ -1,3 +1,7 @@
+@font-face {
+  font-family: goodgirls;
+  src: url(../assets/goodgirls.ttf);
+}
 body {
   font-size: 10pt;
 }
@@ -63,8 +67,163 @@ nav .nav-list #product-list li:hover a .brand-text {
   background: #f16421;
   border-radius: 5px;
 }
-.item {
-  height: 10rem;
-  background: #4DC7A0;
-  padding: 1rem;
+.swipper-container {
+  height: 100px;
+}
+.custom-scroll {
+  height: 480px;
+  overflow: auto;
+}
+.custom-scroll .swiper-pagination-switch {
+  width: 96px;
+  height: 72px;
+  display: block;
+  margin: 5px auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.custom-scroll::-webkit-scrollbar {
+  width: 15px;
+}
+.custom-scroll::-webkit-scrollbar-button:vertical:increment {
+  background: url(../assets/arr_down.gif) no-repeat;
+}
+.custom-scroll::-webkit-scrollbar-button:vertical:increment:hover {
+  cursor: pointer;
+}
+.custom-scroll::-webkit-scrollbar-button:vertical:decrement {
+  background: url(../assets/arr_top.gif) no-repeat;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #f16421;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #E25B1B;
+}
+.custom-scroll::-webkit-scrollbar-thumb:active {
+  background: #CC5218;
+}
+.swipper-container .swiper-slide .boxtext {
+  color: #6b230a;
+  text-align: center;
+}
+.swipper-container .swiper-slide .boxtext .product-name {
+  font-size: 24px;
+  font-family: goodgirls;
+}
+.header #select-country button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #f16421;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+}
+.header #select-country button img {
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+.header #select-country button:hover {
+  background-color: #f16421;
+  color: white;
+}
+.header #select-country button:focus {
+  box-shadow: none;
+}
+.header #select-country ul.country-menu {
+  display: none;
+  list-style: none;
+  margin: 0px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 0px #ccc;
+  z-index: 1;
+  background-color: white;
+  right: 0;
+}
+.header #select-country ul.country-menu li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header #select-country ul.country-menu li a {
+  padding: 5px 10px;
+  line-height: 20px;
+  width: 100%;
+  border-radius: 10px;
+  color: black;
+}
+.header #select-country ul.country-menu li a img {
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+.header #select-country ul.country-menu li a:hover {
+  background-color: #f16421;
+  color: white;
+  text-decoration: none;
+}
+.header #select-country.active button {
+  background-color: #f16421;
+  color: white;
+}
+.header #select-country.active ul.country-menu {
+  display: block;
+}
+.footer {
+  font-size: 12px;
+  color: #6b230a;
+  text-align: center;
+}
+.footer ul.social-bookmarks {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.footer ul.social-bookmarks .jcodelivery a {
+  background: url(../assets/social/jcodelivery.png) no-repeat 0 0;
+  width: 115px !important;
+}
+.footer ul.social-bookmarks .jcodelivery a:hover {
+  background-color: #66150b;
+}
+.footer ul.social-bookmarks .facebook a {
+  background: url(../assets/social/facebook.png) no-repeat 0 0;
+}
+.footer ul.social-bookmarks .facebook a:hover {
+  background-color: #3b5998;
+}
+.footer ul.social-bookmarks .instagram a {
+  background: url(../assets/social/instagram-new.png) no-repeat 0 0;
+}
+.footer ul.social-bookmarks .instagram a:hover {
+  background-color: #eb4924;
+}
+.footer ul.social-bookmarks .twitter a {
+  background: url(../assets/social/twitter.png) no-repeat 0 0;
+}
+.footer ul.social-bookmarks .twitter a:hover {
+  background-color: #48c4d2;
+}
+.footer ul.social-bookmarks .youtube a {
+  background: url(../assets/social/youtube.png) no-repeat 0 0;
+}
+.footer ul.social-bookmarks .youtube a:hover {
+  background-color: #f45750;
+}
+.footer ul.social-bookmarks a {
+  color: transparent;
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: all .3s ease 0s;
+}
+.footer ul.social-bookmarks a:hover {
+  background-position: 0 -40px;
 }
