@@ -4,6 +4,39 @@
 }
 body{
     font-size: 10pt;
+    #main{
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+        ::-webkit-scrollbar-button:vertical:increment { 
+            background: url(../assets/arr_down.gif) no-repeat;
+        }
+        ::-webkit-scrollbar-button:vertical:decrement {
+            background: url(../assets/arr_top.gif) no-repeat;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+         
+        ::-webkit-scrollbar-thumb {
+            background: #f16421; 
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E25B1B; 
+        }
+        ::-webkit-scrollbar-thumb:active {
+            background: #CC5218; 
+        }
+        code {
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+        }
+    }
 }
 nav{
     .countryname{
@@ -28,7 +61,7 @@ nav{
             svg{
                 fill: currentColor;
             }
-            &:hover{
+            &:hover, &.active{
                 background: #f16421;
                 border-radius: 5px;
                 >a{
@@ -73,6 +106,13 @@ nav{
                         }
                     }
                 }
+                &.active{
+                    .brand-text{
+                        background: #f16421;
+                        border-radius: 5px;
+                        color: white;
+                    }
+                }
             }
         }
     }
@@ -92,33 +132,6 @@ nav{
         background-size: 100%;
         cursor: pointer;
     }
-    &::-webkit-scrollbar {
-        width: 15px;
-    }
-    &::-webkit-scrollbar-button:vertical:increment { 
-        background: url(../assets/arr_down.gif) no-repeat;
-        &:hover{
-            cursor: pointer;
-        }
-    }
-    &::-webkit-scrollbar-button:vertical:decrement {
-        background: url(../assets/arr_top.gif) no-repeat;
-    }
-    
-    &::-webkit-scrollbar-track {
-        background: transparent; 
-    }
-     
-    &::-webkit-scrollbar-thumb {
-        background: #f16421; 
-    }
-    
-    &::-webkit-scrollbar-thumb:hover {
-        background: #E25B1B; 
-    }
-    &::-webkit-scrollbar-thumb:active {
-        background: #CC5218; 
-    }
 }
 .swipper-container{
     .swiper-slide{
@@ -129,6 +142,147 @@ nav{
                 font-size: 24px;
                 font-family: goodgirls;
             }
+        }
+    }
+}
+#contentwrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 480px;
+    overflow: auto;
+    .product-name{
+        width: 100%;
+        font-family: goodgirls;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        color: #F26724;
+        a{
+            color: #68210E;
+        }
+    }
+}
+#jcoForm{
+    h5 {
+        color: #F16421;
+        font-size: 120%;
+    }
+    .form-group{
+        label {
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            &:focus {
+                border-color: #66afe9;
+                outline: 0;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+            }
+        }
+    }
+    .input-group{
+        position: relative;
+        display: table;
+        border-collapse: separate;
+        .input-group-addon {
+            padding: 6px 12px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+            color: #555;
+            text-align: center;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: table-cell;
+            width: 1%;
+            white-space: nowrap;
+            vertical-align: middle;
+            &:first-child{
+                border-right: 0;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            &:last-child{
+                border-left: 0;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+        input.form-control{
+            border-radius: 0;
+            display: table-cell;
+        }
+    }
+    .checkbox label, .radio label {
+        min-height: 20px;
+        margin-bottom: 0;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    textarea.form-control {
+        height: auto !important;
+    }
+    .btn-warning {
+        color: #fff;
+        background-color: #f0ad4e;
+        border-color: #eea236;
+        &:active{
+            color: #fff;
+            background-color: #ec971f;
+            border-color: #d58512;
+        }
+        &:focus {
+            color: #fff;
+            background-color: #ec971f;
+            border-color: #985f0d;
+        }
+        &:hover {
+            color: #fff;
+            background-color: #ec971f;
+            border-color: #d58512;
+        }
+    }
+}
+#news{
+    .swipper-footer{
+        overflow: hidden;
+        position: absolute;
+        z-index: 8;
+        bottom: 0;
+        left: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5px 10px;
+        opacity: .8;
+        color: #fff;
+        background: #000;
+        h3{
+            font-size: 1.5rem;
+            border-bottom: 1px dotted #fff;
         }
     }
 }

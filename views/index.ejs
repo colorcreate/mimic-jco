@@ -15,10 +15,10 @@
     <div class="container">
         <div class="row">
             <div class="align-items-center col-sm-3 d-flex flex-column">
-                <a href="#" class="my-3">
+                <a href="." class="my-3">
                     <img src="/assets/jco.jpg" alt="jco">
                 </a>
-                <nav class="col-md-8 mx-auto">
+                <nav class="col-md-8 mx-auto" id="nav">
                     <div class="countryname">INDONESIA</div>
                     <ul class="nav nav-list text-center">
                         <li>
@@ -27,17 +27,17 @@
                             <ul class="dropdown-menu mt-0 p-1" id="product-list">
                             </ul>
                         </li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Location</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Franchise</a></li>
-                        <li><a href="#">Newsroom</a></li>
-                        <li><a href="#">J.CO RUN</a></li>
-                        <li><a href="#">SHOP NOW</a></li>
+                        <li class="nav" data-nav="community"><a href="#">Community</a></li>
+                        <li class="nav" data-nav="location"><a href="#">Location</a></li>
+                        <li class="nav" data-nav="contact"><a href="#">Contact Us</a></li>
+                        <li class="nav" data-nav="franchise"><a href="#">Franchise</a></li>
+                        <li class="nav" data-nav="newsroom"><a href="#">Newsroom</a></li>
+                        <li class="nav" data-nav="run"><a href="https://jco.run/">J.CO RUN</a></li>
+                        <li class="nav" data-nav="shop"><a href="https://www.jcodelivery.com/"><strong>SHOP NOW</strong></a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-sm-9">
+            <div class="col-sm-8">
                 <div class="py-3 header">
                     <div class="float-right position-relative" id="select-country">
                         <button type="button" class="btn">
@@ -55,9 +55,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-12 py-3 d-flex content">
-                    <div class="col-sm-9 swipper-container"></div>
-                    <div class="col-sm-3 custom-scroll"></div>
+                <div class="col-sm-12 py-3 d-flex content" id="main">
                 </div>
             </div>
         </div>

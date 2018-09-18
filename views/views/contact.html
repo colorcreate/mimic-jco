@@ -1,0 +1,63 @@
+<div class="col-md-8">
+    <h1>Hello J.CO</h1>
+    <p>Submit a question or comment to our Customer Relation Team</p>
+    <code>* Required Fields</code>
+    <div style="border-left:#F16421 17px solid;padding-left:15px;margin-top: 10px;">
+        <form role="form" method="post" id="jcoForm">
+            <input type="hidden" id="jcoCountryID" name="jco[WebCountry]" value="id">
+            <div class="box-body">
+                <h5>CONTACT INFORMATION</h5>
+                <div class="form-group">
+                    <label for="jcoName">Name <code>*</code></label>
+                    <input type="text" class="form-control" id="jcoName" name="jco[Name]" placeholder="Enter name" value="" required="">
+                </div>
+                <div class="form-group">
+                    <label for="jcoEmail">Email address <code>*</code></label>
+                    <input type="email" class="form-control" id="jcoEmail" name="jco[Email]" value="" placeholder="Enter email" required="">
+                </div>
+                <div class="form-group">
+                    <label for="jcoPhone">Phone number <code>*</code></label>
+                    <input type="tel" class="form-control" id="jcoPhone" name="jco[Phone]" value="" placeholder="Enter phone number" required="">
+                </div>
+                <div class="form-group">
+                    <label for="jcoCompany">Company</label>
+                    <input type="text" class="form-control" id="jcoCompany" name="jco[Company]" value="" placeholder="Enter company name">
+                </div>
+                <hr>
+                <h5>QUESTION OR COMMENT</h5>
+                <div class="form-group">
+                    <label for="jcoCountry">Which country do you want to submit this question or comment? <code>*</code></label>
+                    <select class="form-control" id="jcoCountry" name="jco[Country]">
+        <option value="">--Select Country--</option>
+        <option value="HK">Hong Kong</option><option selected="" value="ID">Indonesia</option><option value="MY">Malaysia</option><option value="PH">Philippines</option><option value="SA">Saudi Arabia</option><option value="SG">Singapore</option>
+        </select>
+                </div>
+                <div class="form-group">
+                    <label for="jcoTopic">Please choose a general topic <code>*</code></label>
+                    <select class="form-control" id="jcoTopic" name="jco[Topic]">
+        <option value="">--Select topic--</option>
+        <option value="In store experience">In store experience</option><option value="J.CO Delivery Service">J.CO Delivery Service</option><option value="Nutritional information">Nutritional information</option><option value="Corporate Social Responsibility">Corporate Social Responsibility</option><option value="Donation or sponsorship request">Donation or sponsorship request</option><option value="Investor relations">Investor relations</option><option value="Job opportunities at J.CO">Job opportunities at J.CO</option><option value="General inquiries and other information">General inquiries and other information</option>
+        </select>
+                    <div id="topicSuggest" style="padding:3px; padding-left:25px;color:#F16421;background: transparent url('/assets/icon_info.png') left 50% no-repeat;">For further information about any franchising matter, please use this form: <br>» <b><a href="#">Franchise Inquiry Form</a></b></div>
+                </div>
+                <div class="form-group">
+                    <label for="jcoComment">Message <code>*</code></label>
+                    <textarea class="form-control" id="jcoComment" name="jco[Comment]" rows="5" placeholder="Enter your message here..." required=""></textarea>
+                </div>
+            </div>
+            <div class="box-footer">
+                <button type="submit" class="btn btn-warning">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="col-md-4">
+    <img src="/assets/contact.jpg" alt="Contact Us">
+    <p>You could also contact us right here: </p>
+    <b>J.CO Indonesia</b>
+    <br>
+    <img src="/assets/phone.png" alt="Phone"> +62 8158898000
+    <br>
+    <img src="/assets/email.png" alt="Phone">
+    <a href="mailto:hello@jcodonuts.com">hello@jcodonuts.com</a>
+</div>

@@ -1,19 +1,25 @@
 [{
     "name": "Donuts",
+    "nav": "donuts",
     "url": "/assets/products/donut.jpg"
 }, {
     "name": "J.COFFEE",
+    "nav": "jcoffee",
     "url": "/assets/products/jcoffee.jpg"
 }, {
     "name": "J.Club",
+    "nav": "jclub",
     "url": "/assets/products/clubs.jpg"
 }, {
     "name": "J.Pops",
+    "nav": "jpops",
     "url": "/assets/products/pops.jpg"
 }, {
-    "name": "J.COLL Yogurt",
+    "name": "J.COOL Yogurt",
+    "nav": "jcool",
     "url": "/assets/products/jcool.jpg"
 }, {
     "name": "J.CRONUT",
+    "nav": "jcronut",
     "url": "/assets/products/cronut.jpg"
 }]

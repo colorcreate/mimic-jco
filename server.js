@@ -6,6 +6,7 @@ app.use('/js', express.static('views/js'))
 app.use('/css', express.static('views/css'))
 app.use('/assets', express.static('views/assets'))
 app.use('/data', express.static('views/data'))
+app.use('/views', express.static('views/views'))
 app.get('/', function(req, res){
     res.render('index')
 })

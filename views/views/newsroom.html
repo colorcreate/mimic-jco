@@ -1,0 +1,13 @@
+<div class="owl-carousel position-relative" id="news">
+</div>
+<script>
+    $.getJSON('/data/news.json', function(news){
+        $('.owl-carousel').html(news.map(x=>'<a><div class="swipper-slider"><img src="'+ x.url+'"/></div><div class="swipper-footer"><h3>'+x.name+'</h3><p>'+x.desc+'</p></div></a>').join('\n'))
+        $('.owl-carousel').owlCarousel({
+            margin:10,
+            items: 1,
+            loop:true,
+            autoplay:true,
+        })
+    })
+</script>
