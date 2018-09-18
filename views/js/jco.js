@@ -23,6 +23,10 @@ function controlNav(){
         $('.nav-list li').removeClass('active')
         $(this).parent().addClass('active')
         var nav = $(this).parent().attr('data-nav')
+        if(nav == "products"){
+            e.preventDefault()
+            return
+        }
         if(nav != "run" && nav != "shop"){
             setQuery({
                 tab: nav
