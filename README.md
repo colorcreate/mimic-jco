@@ -10,6 +10,7 @@ In this repo, I challenge my self to develop my skill, its like:
 because _nivo slider_ is not for free, so I try another options and I choose _Owl Carousel_ to make Image Slider
 - **Single Page Application:** When my friend tell me about SPA (_Single Page Application_) Angular, I challenge my self to create SPA just using _javascript_ 
 and I did make it with helping from `window.location` attribute
+- **Bootstraps:** I newer used it before, but I try it in this project
 
 
 
